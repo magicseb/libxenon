@@ -23,23 +23,3 @@ void delay(int u)
 {
 	tdelay(((long long)PPC_TIMEBASE_FREQ) * u);
 }
-
-void tsleep(uint64_t u)
-{
-	tdelay(u);
-}
-
-void usleep(int u)
-{
-	udelay(u);
-}
-
-void msleep(int u)
-{
-	mdelay(u);
-}
-
-void sleep(int u)
-{
-	delay(u);
-}
