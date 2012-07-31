@@ -8,6 +8,11 @@ extern "C" {
 extern void udelay(int);
 extern void mdelay(int);
 extern void delay(int);
+extern void tsleep(uint64_t u);
+extern void usleep(int u);
+extern void msleep(int u);
+extern void sleep(int u);
+
 
 #ifdef __cplusplus
 };
