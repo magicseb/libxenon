@@ -157,7 +157,7 @@ function zlib_install
 
 	echo -e "Extracting zlib..."
 	rm -rf $ZLIB
-	tar xjf $ZLIB.tar.gz >> $LOGFILE 2>&1 || exit 0
+	tar xvf $ZLIB.tar.gz >> $LOGFILE 2>&1 || exit 0
 	cd $ZLIB
 
 	export TARGET_SAVE=$TARGET
